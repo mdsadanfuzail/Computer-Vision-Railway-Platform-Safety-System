@@ -78,7 +78,7 @@ Computer-Vision-Railway-Platform-Safety-System/
 ├── assets/                          # Video files and other assets
 ├── weights/                         # YOLOv8 and YOLOv11 model weights (pre-trained and fine-tuned)
 ├── Fine-Tuning YOLOv11n-seg.ipynb   # Notebook for fine-tuning YOLOv11n-seg
-├── code/                            # Code files moved to this directory
+├── code/                            
 │   ├── main.py                      # Entry point of the system, handles video processing and safety checks
 │   ├── person_detection.py          # Person detection using YOLOv8n
 │   ├── track_segmentation.py        # Segments railway tracks using YOLOv11n-seg
