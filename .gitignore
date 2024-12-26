@@ -1,0 +1,20 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Model training stuff
+runs/
+train_results/
+
+# Ignore assets directory 
+assets/
+
+# Ignore dataset
+dataset/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
