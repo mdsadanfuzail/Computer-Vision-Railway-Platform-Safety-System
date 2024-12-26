@@ -1,1 +1,0 @@
-base_dir / "assets" / "Crossing Track test.mp4"
