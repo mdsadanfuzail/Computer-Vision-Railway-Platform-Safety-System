@@ -3,7 +3,8 @@ import numpy as np
 import cv2
 from pathlib import Path
 
-base_dir = Path(__file__).resolve().parent
+base_dir = Path(__file__).resolve().parent.parent
+
 model_path_yolov11n_seg = base_dir / "weights" / "fine-tuned YOLOV11n-seg weights" / "best.pt"
 
 if not model_path_yolov11n_seg.exists():

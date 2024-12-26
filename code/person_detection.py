@@ -1,7 +1,8 @@
 from ultralytics import YOLO
 from pathlib import Path
 
-base_dir = Path(__file__).resolve().parent
+base_dir = Path(__file__).resolve().parent.parent
+
 model_path_yolov8n = base_dir / "weights" / "pre-trained YOLOv8n weights" / "yolov8n.pt"
 
 if not model_path_yolov8n.exists():

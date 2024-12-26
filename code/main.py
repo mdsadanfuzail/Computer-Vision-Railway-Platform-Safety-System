@@ -5,7 +5,7 @@ from track_segmentation import segment_tracks
 from proximity_check import check_proximity
 from visualization import draw_person_boxes, draw_tracks
 
-base_dir = Path(__file__).resolve().parent
+base_dir = Path(__file__).resolve().parent.parent
 
 video_path = base_dir / "assets" / "Crossing Track test.mp4"
 
