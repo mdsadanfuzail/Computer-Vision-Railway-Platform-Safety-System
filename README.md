@@ -73,16 +73,17 @@ To run the Railway Platform Safety System locally, follow these steps:
 ## Project Structure
 
 ```
-Railway-Platform-Safety-System/
+Computer-Vision-Railway-Platform-Safety-System/
 |
 ├── assets/                          # Video files and other assets
-├── weights/                         # YOLOv8 model weights (pre-trained and custom)
-├── Fine-Tuning YOLOv11n-seg.ipynb   # Fine-tuning the YOLOv11n-seg on custom dataset for railway tracks segmentation
-├── main.py                          # Entry point of the system, handles video processing and safety checks
-├── person_detection.py              # Person detection using YOLOv8n
-├── track_segmentation.py            # Segments railway tracks using YOLOv11n-seg
-├── proximity_check.py               # Checks distance of people from tracks and identifies danger zones
-├── visualization.py                 # Visualizes the results and overlays on video frames
+├── weights/                         # YOLOv8 and YOLOv11 model weights (pre-trained and fine-tuned)
+├── Fine-Tuning YOLOv11n-seg.ipynb   # Notebook for fine-tuning YOLOv11n-seg
+├── code/                            # Code files moved to this directory
+│   ├── main.py                      # Entry point of the system, handles video processing and safety checks
+│   ├── person_detection.py          # Person detection using YOLOv8n
+│   ├── track_segmentation.py        # Segments railway tracks using YOLOv11n-seg
+│   ├── proximity_check.py           # Checks distance of people from tracks and identifies danger zones
+│   ├── visualization.py             # Visualizes the results and overlays on video frames
 ├── requirements.txt                 # Python dependencies
 └── README.md                        # Project documentation
 ```
