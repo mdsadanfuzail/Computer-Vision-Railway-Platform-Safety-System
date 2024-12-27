@@ -7,7 +7,7 @@ venv/
 runs/
 train_results/
 
-# assets directory 
+# assets 
 assets/
 
 # dataset
