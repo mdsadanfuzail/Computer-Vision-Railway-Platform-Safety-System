@@ -7,7 +7,7 @@ from visualization import draw_person_boxes, draw_tracks
 
 base_dir = Path(__file__).resolve().parent.parent
 
-video_path = base_dir / "assets" / "Crossing Track test.mp4"
+video_path = base_dir / "assets" / "test3.mp4"
 
 safety_threshold = 50
 
