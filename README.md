@@ -18,7 +18,7 @@ You can view the Fine-Tuining YOLOv11n-seg model notebook [here](https://colab.r
 
 - **Programming Language**: Python
 - **Libraries/Frameworks**:
-  - [YOLOv5](https://github.com/ultralytics/yolov5) for object detection (replacing YOLOv8n)
+  - [YOLOv5](https://github.com/ultralytics/yolov5) for object detection
   - [YOLOv11](https://github.com/ultralytics/ultralytics) for segmentation
   - [PyTorch](https://pytorch.org/) for model loading, inference, and training
   - [OpenCV](https://opencv.org/) for image processing and visualization
