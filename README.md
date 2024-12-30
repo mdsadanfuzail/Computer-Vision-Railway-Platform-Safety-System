@@ -10,16 +10,21 @@ The Railway Platform Safety System is a computer vision-based solution designed 
 - **Visualization**: Displays bounding boxes around detected people and track segmentation overlays on video frames.
 - **Real-Time Processing**: Processes video frames in real-time to ensure timely detection of safety risks.
 
+ ### Fine-Tuining notebook
+
+You can view the Fine-Tuining YOLOv11n-seg model notebook [here](https://colab.research.google.com/drive/16YhaC_rWVklu9hW_AzIg5Wm2sM3BjLa1?usp=sharing).
+
 ## Tech Stack
 
 - **Programming Language**: Python
 - **Libraries/Frameworks**:
-  - [YOLOv8](https://github.com/ultralytics/yolov8) for object detection
+  - [YOLOv5](https://github.com/ultralytics/yolov5) for object detection (replacing YOLOv8n)
   - [YOLOv11](https://github.com/ultralytics/ultralytics) for segmentation
+  - [PyTorch](https://pytorch.org/) for model loading, inference, and training
   - [OpenCV](https://opencv.org/) for image processing and visualization
 - **Model Weights**: Fine-tuned YOLOv11n-seg and pre-trained YOLOv5s model weights
 - **Video Processing**: Uses OpenCV's `cv2.VideoCapture` for video input
-- **Detection and Segmentation**: YOLOv8n for detecting people and Fine-tuned YOLOv11n-seg for segmenting tracks
+- **Detection and Segmentation**: YOLOv5s for detecting people and Fine-tuned YOLOv11n-seg for segmenting tracks
 
 ## Citation
 
