@@ -4,7 +4,7 @@ The Railway Platform Safety System is a computer vision-based solution designed 
 
 ## Features
 
-- **Person Detection**: Detects people on the railway platform using YOLOv8.
+- **Person Detection**: Detects people on the railway platform using YOLOv5s.
 - **Track Segmentation**: Segments and identifies tracks using a custom Fine-tuned YOLOv11n-seg model.
 - **Proximity Check**: Monitors the proximity of people to the tracks and raises a danger warning if the distance is too close.
 - **Visualization**: Displays bounding boxes around detected people and track segmentation overlays on video frames.
@@ -17,7 +17,7 @@ The Railway Platform Safety System is a computer vision-based solution designed 
   - [YOLOv8](https://github.com/ultralytics/yolov8) for object detection
   - [YOLOv11](https://github.com/ultralytics/ultralytics) for segmentation
   - [OpenCV](https://opencv.org/) for image processing and visualization
-- **Model Weights**: Fine-tuned YOLOv11n-seg and pre-trained YOLOv8n model weights
+- **Model Weights**: Fine-tuned YOLOv11n-seg and pre-trained YOLOv5s model weights
 - **Video Processing**: Uses OpenCV's `cv2.VideoCapture` for video input
 - **Detection and Segmentation**: YOLOv8n for detecting people and Fine-tuned YOLOv11n-seg for segmenting tracks
 
@@ -52,9 +52,6 @@ To run the Railway Platform Safety System locally, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
-
-4. Download the YOLOv8 model weights:
-   - Place the YOLOv8 model weights in the `weights/` directory.
 
 ## Usage
 
