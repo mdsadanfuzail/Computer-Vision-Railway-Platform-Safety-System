@@ -10,9 +10,9 @@ The Railway Platform Safety System is a computer vision-based solution designed 
 - **Visualization**: Displays bounding boxes around detected people and track segmentation overlays on video frames.
 - **Real-Time Processing**: Processes video frames in real-time to ensure timely detection of safety risks.
 
-## Fine-Tuining notebook
+## Fine-Tuining YOLOv11n-seg Model on Google Colab
 
-You can view the Fine-Tuining YOLOv11n-seg model notebook [here](https://colab.research.google.com/drive/16YhaC_rWVklu9hW_AzIg5Wm2sM3BjLa1?usp=sharing).
+You can view the Fine-Tuning YOLOv11n-seg model notebook on Google Colab [here](https://colab.research.google.com/drive/16YhaC_rWVklu9hW_AzIg5Wm2sM3BjLa1?usp=sharing).
 
 ## Tech Stack
 
