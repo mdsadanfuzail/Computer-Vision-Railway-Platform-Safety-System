@@ -7,10 +7,10 @@ base_dir = Path(__file__).resolve().parent.parent
 
 model_path_yolov11n_seg = base_dir / "weights" / "fine-tuned YOLOV11n-seg weights" / "best.pt"
 
-if not model_path_yolov11n_seg.exists():
-    print(f"The YOLO model file does not exist at {model_path_yolov11n_seg}")
-else:
+if model_path_yolov11n_seg.exists():
     track_model = YOLO(model_path_yolov11n_seg)
+else:
+    print(f"The YOLO model file does not exist at {model_path_yolov11n_seg}")
 
 def segment_tracks(frame):
     results = track_model(frame)
