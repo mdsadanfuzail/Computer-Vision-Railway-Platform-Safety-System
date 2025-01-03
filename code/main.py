@@ -8,11 +8,19 @@ from visualization import draw_person_boxes, draw_tracks
 base_dir = Path(__file__).resolve().parent.parent
 
 video_path = base_dir / "assets" / "test3.mp4"
+output_path = base_dir/ "assets" / "saved" / "test3.mp4"
 
 safety_threshold = 50
 
 #load video or camera
 cap = cv2.VideoCapture(video_path)
+
+frame_w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+frame_h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+fps = int(cap.get(cv2.CAP_PROP_FPS))
+
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+out = cv2.VideoWriter(str(output_path), fourcc, fps, (frame_w, frame_h))
 
 while cap.isOpened():
     ret, frame = cap.read()
@@ -32,6 +40,9 @@ while cap.isOpened():
     draw_person_boxes(frame, person_boxes)
     frame_with_mask = draw_tracks(frame, contours_list)
 
+    # Write frame to save
+    out.write(frame_with_mask)
+
     # Display the frame
     cv2.imshow("Railway Platform Safety System", frame_with_mask)
 
@@ -42,4 +53,5 @@ while cap.isOpened():
 
 # Release
 cap.release()
+out.release()
 cv2.destroyAllWindows()
