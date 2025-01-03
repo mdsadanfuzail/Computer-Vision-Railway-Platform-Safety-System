@@ -4,6 +4,7 @@ from person_detection import detect_person
 from track_segmentation import segment_tracks
 from proximity_check import check_proximity
 from visualization import draw_person_boxes, draw_tracks
+import pygame
 
 base_dir = Path(__file__).resolve().parent.parent
 
@@ -11,6 +12,11 @@ video_path = base_dir / "assets" / "test3.mp4"
 output_path = base_dir/ "assets" / "saved" / "test3.mp4"
 
 safety_threshold = 50
+
+# for alarm sound
+pygame.mixer.init()
+alarm =  base_dir/ "assets" / "alarm" / "danger-alarm.mp3"
+pygame.mixer.music.load(alarm)
 
 #load video or camera
 cap = cv2.VideoCapture(video_path)
@@ -35,6 +41,9 @@ while cap.isOpened():
 
     # Check distance of people from tracks
     danger_flags = check_proximity(person_boxes, contours_list, frame, safety_threshold)
+    if True in danger_flags:
+        if not pygame.mixer.music.get_busy():
+            pygame.mixer.music.play() # sound alarm
 
     # Visualizing the result
     draw_person_boxes(frame, person_boxes)
