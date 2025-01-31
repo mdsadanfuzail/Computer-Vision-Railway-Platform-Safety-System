@@ -14,7 +14,7 @@ The Railway Platform Safety System is a computer vision-based solution designed 
 
 You can view the Fine-Tuning YOLOv11n-seg model notebook on Google Colab [here](https://colab.research.google.com/drive/16YhaC_rWVklu9hW_AzIg5Wm2sM3BjLa1?usp=sharing).
 
-### Tech Stack
+## Tech Stack
 
 - **Programming Language**: Python
 - **Libraries/Frameworks**:
